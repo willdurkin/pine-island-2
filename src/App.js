@@ -2,13 +2,15 @@ import "./styles.css";
 import React from "react";
 import Header from "./Components/Header";
 import Main from "./Components/Main";
-import { Route, Switch } from "react-router-dom";
+import Footer from './Components/Footer';
+
 
 export default function App() {
   return (
     <div className="App">
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 }
