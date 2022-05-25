@@ -13,6 +13,7 @@ import Woodcraft from "./Activities/Woodcraft";
 import Workshop from "./Activities/Shop";
 import Blog from './Blog';
 import Trips from './Trips';
+import CampLife from './CampLife';
 
 
 const Main = () => {
@@ -32,6 +33,7 @@ const Main = () => {
         <Route path="/activities/workshop" element={<Workshop />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/trips" element={<Trips />} />
+        <Route path="/camp-life" element={<CampLife />} />
       </Routes>
     </main>
   );

@@ -8,6 +8,10 @@ import pic1904 from '../img/pic-1904.jpeg';
 import kitahdin from '../img/kitahdin.jpeg';
 import hike4 from '../img/trips/hike4.jpeg';
 import hike6 from '../img/trips/hike6.jpeg';
+import campfire from '../img/campfire.jpeg';
+import expedition from '../img/expedition2.jpeg';
+import awards from '../img/activities/awards.jpeg';
+
 
 const Home = () => {
   return (
@@ -59,8 +63,6 @@ const Home = () => {
             humor, honesty, and respect for the natural world and how to experience 
             it safely are all things we strive to teach boys each summer.
           </p>
-
-          <Link to='#'><button style={{width: '190px'}}>MISSION & VALUES</button></Link>
         </div>
 
         <img src={hike4} />
@@ -69,25 +71,33 @@ const Home = () => {
 
       <div className="gif" style={{ backgroundImage: `url(${banner})` }} >
         <h2>A magical island in the middle of a pristine, quiet lake in Maine</h2>
-        <Link to='#'><button>LEARN ABOUT CAMP LIFE</button></Link>
+        <Link to='#'><button>CAMP LIFE</button></Link>
       </div>
 
       <div className="slide">
 
         <div className="copy">
-          <h2>Over 100 years of tradition</h2>
+          <h2>Full Season Experience</h2>
           <p>
             Pine Island Camp was founded in 1902 by Clarence Colby on Pine Island, 
             a beautiful small island in Great Pond, the largest of the Belgrade Lakes 
             in central Maine. Colby's original ideas and ideals are very much present at
              Pine Island today, and the philosophy he established is as important and 
             relevant to young people today as it was over 100 years ago.</p> 
-            
-
-          <Link to='#'><button style={{width: '190px'}}>LEARN ABOUT OUR HISTORY</button></Link>
         </div>
 
         <img src={pic1904} />
+      </div>
+
+      <div className="slide">
+        <img src={campfire} />
+
+        <div className="copy">
+          <h2>Nightly Campfire and Saturday Night Show</h2>
+          <p>
+            Every night we have campfire, during which skits, songs, stories, and games keep everyone amused. At this time, the Black and White Knights and their hideous assistants may appear to duel in canoes as they have for decades. A hirsute Esther Williams and her water nymphs might perform some synchronized swimming. Or perhaps Johnny Credit Card will perform one of his memorable ballads. Participation in Campfire is open to everyone and provides an opportunity for creativity and self-expression that is increasingly rare in today's digital world.
+            </p> 
+        </div>
       </div>
 
       <div className="gif" style={{ backgroundImage: `url(${kitahdin})` }} >
@@ -97,7 +107,7 @@ const Home = () => {
 
       <div className="slide">
         <div className="copy">
-          <h2>Dozens of trips sent out each summer</h2>
+          <h2>Stories</h2>
           
           <p>Each summer, Pine Island sends out dozens of hiking, canoeing, 
           kayaking, and rowing trips across Maine
@@ -108,6 +118,25 @@ const Home = () => {
 
         <img src={hike6} />
       </div>
+
+      <div className="slide">
+        <img src={awards} />
+        <div className="copy">
+          <h2>Parent Reviews</h2>
+          
+          <p>Each summer, Pine Island sends out dozens of hiking, canoeing, 
+          kayaking, and rowing trips across Maine
+          </p>
+
+          <Link to='#'><button style={{width: '190px'}}>LEARN ABOUT OUR TRIPS</button></Link>
+        </div>
+      </div>
+
+      <div className="gif" style={{ backgroundImage: `url(${expedition})` }} >
+        <h2>Leadership Development - Expedition Camp</h2>
+        <Link to='#'><button style={{width: '190px'}}>EXPEDITION CAMP</button></Link>
+      </div>
+
     </div>
   );
 };

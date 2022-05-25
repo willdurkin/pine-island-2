@@ -34,13 +34,13 @@ const Header = () => {
       </Link>
 
       <div className={pathname === "/" && pos === 'top' ? "nav-links-home" : "nav-links"}>
-        <Link to="/activities" className="link">
+        <Link to="/camp-life" className="link">
           CAMP LIFE
         </Link>
-        <Link to="/trips" className="link">
-          MISSION & VALUES
-        </Link>
         <Link to="/activities" className="link">
+          ABOUT
+        </Link>
+        <Link to="/trips" className="link">
           STAFF
         </Link>
         <Link to="/blog" className="link">

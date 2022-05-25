@@ -5,7 +5,7 @@
   position: relative;
   top: -8px;
   left: -8px;
-  /* background-color: darkblue; */
+  background-color: #FAFFA; 
 }
 
 h1,
@@ -192,7 +192,7 @@ p {
 
 .gif button {
   height: 50px;
-  width: 190px;
+  width: 170px;
   background-color: #0b0b43;
   color: white;
   border: none;
@@ -216,6 +216,12 @@ button:hover {
   position: relative;
 }
 
+.camp-photo {
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+}
+
 .gif h2 {
   font-size: 40px;
   padding-top: 140px;
@@ -225,12 +231,16 @@ button:hover {
 }
 
 /* ~~~~~~ACTIVITIES~~~~~~~~~~ */
+.page-wrap {
+  padding-top: 40px;
+}
+
 .activity-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .activity-list h1 {
@@ -246,6 +256,23 @@ button:hover {
   line-height: 24px;
   font-family: 'Open Sans';
   color: #6a6a6a;
+}
+
+.subnav {
+  margin-bottom: 40px;
+}
+
+.subnav h2 {
+  font-weight: 500;
+  font-size: 28px;
+  padding: 10px;
+  color: black;
+  font-family: "EB Garamond", serif;
+}
+
+.subnav a {
+  padding: 10px;
+  color: black;
 }
 
 .activity-img {
@@ -294,12 +321,12 @@ button:hover {
   width: 90%;
   display: flex;
   flex-direction: row;
-  margin: 20px 5% 20px 5%;
+  margin: 20px 5% 60px 5%;
 }
 
 .activity-wrapper img {
-  margin: 20px;
-  width: 30%;
+  margin: 40px 20px 0px 20px;
+  width: 40%;
 }
 
 .activity-header {
@@ -312,13 +339,13 @@ button:hover {
 .activity-content {
   width: 60%;
   text-align: left;
-  padding: 60px 20px 0px 20px;
+  padding: 20px 20px 20px 20px;
   font-size: 18px;
 }
 
 .activity-content h1 {
   font-size: 42px;
-  margin-top: 10px;
+  margin: 10px 0px; 
 }
 
 .activity-content a {
@@ -331,6 +358,7 @@ button:hover {
 .activity-content p {
   margin: 20px 0 0 0;
   text-align: left;
+  font-size: 16px;
 }
 
 .activity-gallery img {
@@ -339,8 +367,6 @@ button:hover {
   margin: 10px!important;
 
 }
-
-
 
 .activity-gallery {
   margin-top: 60px;

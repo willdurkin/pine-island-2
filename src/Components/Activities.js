@@ -5,11 +5,11 @@ import canoe2 from '../img/activities/canoe.jpeg';
 import canoe3 from '../img/activities/canoe2.jpeg';
 import canoe4 from '../img/activities/canoe3.jpeg';
 import canoe5 from '../img/activities/canoe4.jpeg';
-import canoe6 from '../img/activities/canoe5.jpeg';
+import canoe6 from '../img/activities/canoe6.jpeg';
 import archery2 from '../img/activities/archery2.jpeg';
 import archery from '../img/activities/archery.jpeg';
 import fishing from '../img/activities/fishing1.jpeg';
-import rowing from '../img/activities/rowing2.jpeg';
+import rowing from '../img/activities/row2.jpeg';
 import sailing from '../img/activities/sail7.jpeg';
 import shop from '../img/activities/woodshop2.jpeg';
 import swimming from '../img/activities/swim2.jpeg';
@@ -25,6 +25,10 @@ const Activities = () => {
 
 	return (
 		<div>
+			{/*<div className="gif" style={{ backgroundImage: `url(${regatta})` }} >
+			  <h2>Activites</h2>
+			</div>*/}
+
 			<div className="activity-list slide">
 		        <h1 style={{ align: "center" }}>Find your new favorite activity</h1>
 		        <h2>
@@ -32,26 +36,15 @@ const Activities = () => {
 		           hit the bullseye, or star in the Saturday Night Show.
 		           Activites are the center of daily life on Pine Island. 
 		           Each day is a chance to try something new!
+		        <br></br>
+		        <br></br>
+		          Pine Island offers two two-hour activity periods each day, and right after breakfast boys are allowed to choose the activities they will take that day. Our program is designed to allow enough time in each activity period for focused instruction and, in boating activities, the opportunity to venture out across the lake on outings that combine instruction with adventure. Our activities offer the opportunity for boys to earn rankings, but the emphasis is on each boy's improvement of his own skills rather than on competition with others.
 		        </h2>
 			 </div>
 
+
 			<div className="gif" style={{ backgroundImage: `url(${regatta})` }} ></div>
 
-
-		<div className='activity-wrapper'>
-			<img src={archery2} />
-		   	<div className='activity-content'>
-		      <h1>Archery</h1>
-		     
-		      <p>In riflery and archery, the standards of marksmanship, safety, and 
-		      instruction are the highest. </p>
-		      <p>
-		      As in other activities, both programs offer the 
-		      opportunity to earn rankings and insignia, but the emphasis is on each boy's 
-		      improvement of his own record rather than constant competition with others.
-		      </p>
-		   </div>
-		 </div>
 
 		 <div className='activity-wrapper'>
 		      <div className='activity-content'>
@@ -65,15 +58,59 @@ const Activities = () => {
 		        </p>
 		      </div>
 
-		      <div className='activity-gallery'>
+		      <img src={canoe6} />
+
+		   {/*   <div className='activity-gallery'>
 		         <img src={canoe2} />
 		         <img src={canoe3} />
 		         <img src={canoe4} />
 		         <img src={canoe5} />
 		         <img src={canoe6} />
 
-		       </div>      
+		       </div>      */}
 		 </div>
+
+		 <div className='activity-wrapper'>
+		      <img src={rowing} />
+		      <div className='activity-content'>
+		        <h1>Rowing</h1>
+		        <p>
+		         Handling a rowboat becomes second nature to almost every Pine Islander. Sound rowing technique is the first step to good seamanship, and rowing is a source of pleasure and exercise unknown to the youth who lives with an outboard at his back. Our rowing fleet includes nine wooden boats custom designed and built for PIC, and a single scull. As with all boating activities, life jackets are required at all times.
+		        </p>
+		      </div>
+		 </div>
+
+		 <div className="gif" style={{ backgroundImage: `url(${canoe})` }} />
+
+		 <div className='activity-wrapper'>
+		      <div className='activity-content'>
+		        <h1>Sailing</h1>
+		        <p>
+		         Hundreds of boys have learned to sail at Pine Island. Great Pond is a large lake, 32 miles around, with islands and bays that invite sailing excursions. The sailing program is designed to accommodate absolute novices, who increase in rank with the staff's guidance. Pine Island has a large and varied fleet of sailboats.
+		         </p>
+		         <p>
+		         It is in one of our two wooden custom built 12 1/2-foot catboats that a novice sailor can learn to handle the main sheet and the tiller before he moves on to one of our four custom built smaller boats. These boats, called Bezumarangs, are small, easy to operate and very forgiving, so they are ideal for intermediate sailors.
+		        </p>
+		      </div>
+		      <img src={sailing} />
+		 </div>
+
+		 <div className='activity-wrapper'>
+		 	<img src={archery} />
+		    <div className='activity-content'>
+		       <h1>Riflery & Archery</h1>
+		      
+		       <p>In riflery and archery, the standards of marksmanship, safety, and 
+		       instruction are the highest. </p>
+		       <p>
+		       As in other activities, both programs offer the 
+		       opportunity to earn rankings and insignia, but the emphasis is on each boy's 
+		       improvement of his own record rather than constant competition with others.
+		       </p>
+		    </div>
+		  </div>
+
+		 <div className="gif" style={{ backgroundImage: `url(${sail2})` }} />	
 
 		 <div className='activity-wrapper'>
 		      <img src={fishing} />
@@ -89,31 +126,6 @@ const Activities = () => {
 
 		 <div className="gif" style={{ backgroundImage: `url(${fishing1})` }} />	
 
-		 <div className='activity-wrapper'>
-		      <div className='activity-content'>
-		        <h1>Rowing</h1>
-		        <p>
-		         Handling a rowboat becomes second nature to almost every Pine Islander. Sound rowing technique is the first step to good seamanship, and rowing is a source of pleasure and exercise unknown to the youth who lives with an outboard at his back. Our rowing fleet includes nine wooden boats custom designed and built for PIC, and a single scull. As with all boating activities, life jackets are required at all times.
-		        </p>
-		      </div>
-		      <img src={rowing} />
-		 </div>
-
-		<div className='activity-wrapper'>
-			<img src={sailing} />
-		     <div className='activity-content'>
-		       <h1>Sailing</h1>
-		       <p>
-		        Hundreds of boys have learned to sail at Pine Island. Great Pond is a large lake, 32 miles around, with islands and bays that invite sailing excursions. The sailing program is designed to accommodate absolute novices, who increase in rank with the staff's guidance. Pine Island has a large and varied fleet of sailboats.
-		        </p>
-		        <p>
-		        It is in one of our two wooden custom built 12 1/2-foot catboats that a novice sailor can learn to handle the main sheet and the tiller before he moves on to one of our four custom built smaller boats. These boats, called Bezumarangs, are small, easy to operate and very forgiving, so they are ideal for intermediate sailors.
-		       </p>
-		     </div>
-		</div>
-
-		<div className="gif" style={{ backgroundImage: `url(${sail2})` }} />	
-
 		<div className='activity-wrapper'>
 		     <div className='activity-content'>
 		       <h1>Swimming</h1>
@@ -126,30 +138,6 @@ const Activities = () => {
 		     <img src={swimming} />
 		</div>
 
-		<div className='activity-wrapper'>
-			<img src={tennis} />
-		     <div className='activity-content'>
-		       <h1>Tennis</h1>
-		       <p>
-		        We have two professionally maintained clay tennis courts on the mainland. Individual instruction gives confidence to the beginner, while coaching and a tennis ladder whet the skills of advanced players. 
-		        </p>
-		     </div>
-		</div>
-
-		<div className="gif" style={{ backgroundImage: `url(${canoe})` }} />	
-
-		<div className='activity-wrapper'>
-		     <div className='activity-content'>
-		       <h1>Woodcraft</h1>
-		       <p>
-		       Pine Island's woodcraft program teaches boys the basic camping skills they'll need on our many trips. Boys can learn basic axemanship, fire building, first aid, emergency shelter construction, leave-no-trace techniques and much more.
-		       </p> 
-		       <p>Achievement in woodcraft at Pine Island culminates in the Maine Woodsman and Junior Maine Woodsman certification program, which includes in-camp instruction, followed by a supervised 3-day trip where campers construct their own sleeping shelters, cook all the food themselves, and pass numerous examinations in essential camping skills.
-
-		        </p>
-		     </div>
-		     <img src={woodcraft} />
-		</div>
 
 		<div className='activity-wrapper'>
 			<img src={shop} />
@@ -164,6 +152,29 @@ const Activities = () => {
 		</div>
 
 		<div className="gif" style={{ backgroundImage: `url(${woodshop2})` }}> </div>	
+
+		<div className='activity-wrapper'>
+			<img src={tennis} />
+		     <div className='activity-content'>
+		       <h1>Tennis</h1>
+		       <p>
+		        We have two professionally maintained clay tennis courts on the mainland. Individual instruction gives confidence to the beginner, while coaching and a tennis ladder whet the skills of advanced players. 
+		        </p>
+		     </div>
+		</div>	
+
+		<div className='activity-wrapper'>
+		     <div className='activity-content'>
+		       <h1>Woodcraft</h1>
+		       <p>
+		       Pine Island's woodcraft program teaches boys the basic camping skills they'll need on our many trips. Boys can learn basic axemanship, fire building, first aid, emergency shelter construction, leave-no-trace techniques and much more.
+		       </p> 
+		       <p>Achievement in woodcraft at Pine Island culminates in the Maine Woodsman and Junior Maine Woodsman certification program, which includes in-camp instruction, followed by a supervised 3-day trip where campers construct their own sleeping shelters, cook all the food themselves, and pass numerous examinations in essential camping skills.
+
+		        </p>
+		     </div>
+		     <img src={woodcraft} />
+		</div>
 
 		</div> /*end*/
 	)
