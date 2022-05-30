@@ -14,6 +14,10 @@ import Workshop from "./Activities/Shop";
 import Blog from './Blog';
 import Trips from './Trips';
 import CampLife from './CampLife';
+import Families from './Families';
+import Staff from './Staff';
+import Alumni from './Alumni';
+import Contact from './Contact';
 
 
 const Main = () => {
@@ -34,6 +38,10 @@ const Main = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/trips" element={<Trips />} />
         <Route path="/camp-life" element={<CampLife />} />
+        <Route path="/families" element={<Families />} />
+        <Route path="/staff" element={<Staff />} />
+        <Route path="/alumni" element={<Alumni />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
   );

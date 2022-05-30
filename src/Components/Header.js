@@ -24,36 +24,43 @@ const Header = () => {
   return (
     <div 
       className="nav" 
-      style={{backgroundColor: pos === "top" ? "rgba(0, 0, 0, 0)" : "#fff", 
-              boxShadow: pos === "top" ? "none": "0px 0px 20px rgba(0, 0, 0, .6)",
+      style={{backgroundColor: pos === "top" ? "rgba(11,11,67, 0.5)" : "rgba(11,11,67, 0.5)", 
+              // boxShadow: pos === "top" ? "none": "0px 0px 20px rgba(0, 0, 0, .6)",
               position: pathname === '/' ? "fixed" : 'absolute' }}>
 
-      <Link to="/">
-        <img src={pathname === '/' && pos === 'top' ? logo : logoBlue} 
-        className={pathname === '/' && pos === 'top' ? 'big-logo' : 'logo'} />
+      <Link to="/" className='logo-link-tag'>
+        <img src={pathname === '/' && pos === 'top' ? logo : logo} 
+        className={pathname === '/' && pos === 'top' ? 'logo' : 'logo'} />
       </Link>
 
-      <div className={pathname === "/" && pos === 'top' ? "nav-links-home" : "nav-links"}>
+      <div className={pathname === "/" && pos === 'top' ? "nav-links-home" : "nav-links-home"}>
         <Link to="/camp-life" className="link">
           CAMP LIFE
         </Link>
         <Link to="/activities" className="link">
-          ABOUT
+          ACTIVITIES
         </Link>
         <Link to="/trips" className="link">
-          STAFF
+          TRIPS
         </Link>
-        <Link to="/blog" className="link">
+        <Link to="/families" className="link">
           FAMILIES
         </Link>
-        <Link to="/activities" className="link">
+        <Link to="/staff" className="link">
+          STAFF
+        </Link>
+        <Link to="/alumni" className="link">
           ALUMNI
         </Link>
-        <Link to="/activities" className="link">
+        <Link to="/blog" className="link">
+          BLOG
+        </Link>
+        <Link to="/contact" className="link">
           CONTACT
         </Link>
-        <button>DONATE</button>
         <button>REQUEST INFO</button>
+        <button>APPLY</button>
+        <button className='donate-button'>DONATE</button>
       </div>
     </div>
   );

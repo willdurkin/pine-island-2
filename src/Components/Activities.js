@@ -14,39 +14,38 @@ import sailing from '../img/activities/sail7.jpeg';
 import shop from '../img/activities/woodshop2.jpeg';
 import swimming from '../img/activities/swim2.jpeg';
 import tennis from '../img/activities/tennis2.jpeg';
-import woodcraft from '../img/activities/woodcraft3.jpeg';
+import woodcraft from '../img/activities/woodcraft4.jpeg';
 import fishing1 from '../img/activities/fishing.jpeg';
 import regatta from '../img/activities/regatta.jpeg';
 import sail2 from '../img/activities/sail3.jpeg';
-import woodshop2 from '../img/activities/woodshop5.jpeg';
+import woodshop2 from '../img/activities/shop.jpeg';
 
 
 const Activities = () => {
 
 	return (
-		<div>
-			{/*<div className="gif" style={{ backgroundImage: `url(${regatta})` }} >
-			  <h2>Activites</h2>
-			</div>*/}
-
-			<div className="activity-list slide">
-		        <h1 style={{ align: "center" }}>Find your new favorite activity</h1>
-		        <h2>
-		          Learn to sail, perfect your cast, roll a kayak, swim around the island,
-		           hit the bullseye, or star in the Saturday Night Show.
-		           Activites are the center of daily life on Pine Island. 
-		           Each day is a chance to try something new!
-		        <br></br>
-		        <br></br>
-		          Pine Island offers two two-hour activity periods each day, and right after breakfast boys are allowed to choose the activities they will take that day. Our program is designed to allow enough time in each activity period for focused instruction and, in boating activities, the opportunity to venture out across the lake on outings that combine instruction with adventure. Our activities offer the opportunity for boys to earn rankings, but the emphasis is on each boy's improvement of his own skills rather than on competition with others.
-		        </h2>
+		<div className='body'>
+			<h1 style={{ align: "center" }}>Find Your New Favorite Activity</h1> 
+			<div className='centered-content'>
+				<h3>
+			          Learn to sail, perfect your cast, roll a kayak, swim around the island,
+			           hit the bullseye, or star in the Saturday Night Show.
+			           Activites are the center of daily life on Pine Island. 
+			           Each day is a chance to try something new!
+			     </h3>
 			 </div>
 
+			<div className="about-photo" style={{ backgroundImage: `url(${regatta})` }} ></div>
 
-			<div className="gif" style={{ backgroundImage: `url(${regatta})` }} ></div>
 
+			<div className="centered-content">
+		       <h2>Daily Schedule</h2>
+		       <p>
+		          Pine Island offers two two-hour activity periods each day, and right after breakfast boys are allowed to choose the activities they will take that day. Our program is designed to allow enough time in each activity period for focused instruction and, in boating activities, the opportunity to venture out across the lake on outings that combine instruction with adventure. Our activities offer the opportunity for boys to earn rankings, but the emphasis is on each boy's improvement of his own skills rather than on competition with others.
+		        </p>
+			</div>
 
-		 <div className='activity-wrapper'>
+		 	<div className='activity-wrapper'>
 		      <div className='activity-content'>
 
 		        <h1>Canoeing & Kayaking</h1>
