@@ -14,18 +14,23 @@ const CampLife = () => {
 
 	return ( 
 		<div className="body"> 
-			<h1 style={{ align: "center" }}>Camp Life</h1> 
-			
-			<div className="centered-image" style={{ backgroundImage: `url(${campPhoto})` }} />
+			<h1>Pine Island Camp</h1> 
 
 			<div className='centered-content'>
+			
+
 				<h3> The more you learn about this
 				magical place, the less surprising you will find the fact that
 				it all happens on a tiny wooded island in a pristine, quiet
 				lake in central Maine. 
 				</h3> 
-
 			</div>
+			<div className="centered-image" style={{ backgroundImage: `url(${campPhoto})` }} />
+
+			
+				
+
+			
 			<div className='centered-content'>
 				<h2>Our Values</h2> 
 			
@@ -38,7 +43,7 @@ const CampLife = () => {
 				<p>
 				Whether your son is shy or gregarious, big or small, this camp will challenge him to be at his best in the varied circumstances of simple outdoor living, albeit under the close supervision of our caring staff. Generations of Pine Islanders have found their summers at camp to be among the most meaningful of their lives.
 				</p>
-				<h3>Welcome to Pine Island Camp.</h3>
+				<h3>Welcome to Pine Island</h3>
 			</div>
 			<div className="about-photo" style={{ backgroundImage: `url(${boatPhoto})` }} />
 
@@ -62,7 +67,7 @@ const CampLife = () => {
 			<div className="about-photo" style={{ backgroundImage: `url(${dock})` }} />
 
 			<div className='centered-content'>
-				<h2>Safety - 110 Years of Building Confidence</h2>
+				<h2>Over 100 Years of Building Confidence</h2>
 				<h3>
 					At Pine Island Camp our first consideration is the safety of our campers and staff. We have an excellent safety record spanning more than 110 summers. 
 				</h3>

@@ -3,7 +3,10 @@ import React from 'react';
 const Staff = () => {
 
 	return (
-		<h1>Staff</h1>
+		<div className='body'>
+
+			<h1>Staff</h1>
+		</div>
 
 	)
 }

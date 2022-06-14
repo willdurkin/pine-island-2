@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
 const Blog = () => {
 
@@ -29,6 +29,8 @@ const Blog = () => {
 	  const handleNextPage = () => setPage(page < pageNumber ? page + 1 : pageNumber);
 
 	  let postList = posts.map((post, i) => {
+	  	console.log(posts);
+	  	
 	    return (
 	      <div>
 	        <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
@@ -38,14 +40,18 @@ const Blog = () => {
 	  });
 
     return (
-    	<div>
+    	<div className='body'>
+    		<h1>The Pine Island Blog</h1>
 	    	<div className="blog">
-	    	<div className="posts-app__post-nav">
+	    	
+	    	{/*<div className="posts-app__post-nav">
 		         <button onClick={handlePrevPage}>Newer posts</button>
 		         <p>Page {page} of {pageNumber}</p>
 		         <button onClick={handleNextPage}>Older posts</button>
-	        </div>
-	    	 	{postList}
+	        </div>*/}
+
+	    	{postList}
+
 	    	 <div className="posts-app__post-nav">
 		         <button onClick={handlePrevPage}>Newer posts</button>
 		         <p>Page {page} of {pageNumber}</p>

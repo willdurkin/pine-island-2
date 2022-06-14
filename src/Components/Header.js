@@ -26,7 +26,7 @@ const Header = () => {
       className="nav" 
       style={{backgroundColor: pos === "top" ? "rgba(11,11,67, 0.5)" : "rgba(11,11,67, 0.5)", 
               // boxShadow: pos === "top" ? "none": "0px 0px 20px rgba(0, 0, 0, .6)",
-              position: pathname === '/' ? "fixed" : 'absolute' }}>
+              position: "fixed"  }}>
 
       <Link to="/" className='logo-link-tag'>
         <img src={pathname === '/' && pos === 'top' ? logo : logo} 
@@ -37,30 +37,47 @@ const Header = () => {
         <Link to="/camp-life" className="link">
           CAMP LIFE
         </Link>
+
         <Link to="/activities" className="link">
           ACTIVITIES
         </Link>
+
         <Link to="/trips" className="link">
           TRIPS
         </Link>
+
         <Link to="/families" className="link">
           FAMILIES
         </Link>
+
         <Link to="/staff" className="link">
           STAFF
         </Link>
+
         <Link to="/alumni" className="link">
           ALUMNI
         </Link>
+
         <Link to="/blog" className="link">
           BLOG
         </Link>
+
         <Link to="/contact" className="link">
           CONTACT
         </Link>
-        <button>REQUEST INFO</button>
-        <button>APPLY</button>
-        <button className='donate-button'>DONATE</button>
+
+        <a href={'https://pineisland.campintouch.com/v2/family/inquiryForm.aspx'} target='#' className='button-link' rel={'external'}>
+          <button>REQUEST INFO</button>
+        </a>
+
+        <a href={'https://pineisland.campintouch.com/ui/forms/application/camper/App'} target='#' className='button-link'>
+          <button>APPLY</button>
+        </a>
+      
+        <Link to='/donate' className='button-link-dark'>
+          <button className='donate-button'>DONATE</button>
+        </Link>
+
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
+
 import banner from "../img/pic6.jpeg";
 import pic4 from "../img/pic4.jpeg";
 import pic5 from "../img/pic5.png";
@@ -11,6 +12,7 @@ import hike6 from '../img/trips/hike6.jpeg';
 import campfire from '../img/campfire.jpeg';
 import expedition from '../img/expedition2.jpeg';
 import awards from '../img/activities/awards.jpeg';
+
 
 
 const Home = () => {
@@ -136,6 +138,7 @@ const Home = () => {
         <h2>Leadership Development - Expedition Camp</h2>
         <Link to='#'><button style={{width: '190px'}}>EXPEDITION CAMP</button></Link>
       </div>
+
 
     </div>
   );

@@ -25,7 +25,7 @@ const Activities = () => {
 
 	return (
 		<div className='body'>
-			<h1 style={{ align: "center" }}>Find Your New Favorite Activity</h1> 
+			<h1>Find Your New Favorite Activity</h1> 
 			<div className='centered-content'>
 				<h3>
 			          Learn to sail, perfect your cast, roll a kayak, swim around the island,
@@ -39,7 +39,7 @@ const Activities = () => {
 
 
 			<div className="centered-content">
-		       <h2>Daily Schedule</h2>
+		       <h2>The Daily Schedule</h2>
 		       <p>
 		          Pine Island offers two two-hour activity periods each day, and right after breakfast boys are allowed to choose the activities they will take that day. Our program is designed to allow enough time in each activity period for focused instruction and, in boating activities, the opportunity to venture out across the lake on outings that combine instruction with adventure. Our activities offer the opportunity for boys to earn rankings, but the emphasis is on each boy's improvement of his own skills rather than on competition with others.
 		        </p>
