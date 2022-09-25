@@ -42,23 +42,17 @@ const Blog = () => {
     return (
     	<div className='body'>
     		<h1>The Pine Island Blog</h1>
+
 	    	<div className="blog">
-	    	
-	    	{/*<div className="posts-app__post-nav">
-		         <button onClick={handlePrevPage}>Newer posts</button>
-		         <p>Page {page} of {pageNumber}</p>
-		         <button onClick={handleNextPage}>Older posts</button>
-	        </div>*/}
 
-	    	{postList}
+	    		{postList}
 
-	    	 <div className="posts-app__post-nav">
-		         <button onClick={handlePrevPage}>Newer posts</button>
-		         <p>Page {page} of {pageNumber}</p>
-		         <button onClick={handleNextPage}>Older posts</button>
-	        </div>
-	    	</div>
-	    	 
+		    	 <div className="posts-app__post-nav">
+			         <button onClick={handlePrevPage}>Newer posts</button>
+			         <p>Page {page} of {pageNumber}</p>
+			         <button onClick={handleNextPage}>Older posts</button>
+		        </div>
+	    	</div> 
 	     </div>
   	 )
 }

@@ -16,6 +16,43 @@ import awards from '../img/activities/awards.jpeg';
 
 
 const Home = () => {
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    let url =
+      `https://pineisland.org/blog/wp-json/wp/v2/posts?_embed&per_page=3`;
+
+    const makeApiCall = async () => {
+      const res = await fetch(url);
+      
+      console.log('res - ', res)
+
+      const json = await res.json();
+
+      console.log("json - ", json);
+      
+      setPosts(json);
+    };
+
+    makeApiCall();
+
+  }, []);
+
+  console.log('posts', posts);
+
+  let widget = posts.map((post, i) => {
+    
+
+    return (
+      <div>
+        <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} className='widget-title' />
+        <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} className='widget-text' />
+        <a target="#" href={post.link} className='widget-link'><button style={{width: '190px'}}>Read More</button></a>
+      </div>
+    );
+  })
+
   return (
     <div>
       <div className="main" style={{ backgroundImage: `url(${picGif})` }}>
@@ -53,7 +90,13 @@ const Home = () => {
             develops a boy's independence, imagination and character.
           </p>
         </div>
+      </div>
 
+      <div className='slide '>
+        <h2 style={{marginLeft: '30px'}} >The Latest News & Events</h2>
+        <div className='homepage-widget'>
+          {widget}
+          </div>
       </div>
 
       <div className="slide">
