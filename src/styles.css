@@ -321,7 +321,7 @@ button:hover {
 .homepage-widget > div {
   width: 28%;
   margin: 2.5%;
-  height: 400px;
+  height: 440px;
   border: 1px solid black;
   font-size: 14px;
   box-sizing: border-box;
@@ -331,6 +331,7 @@ button:hover {
 .widget-title {
   font-size: 18px;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 .widget-text p{

@@ -7,13 +7,16 @@ const Alumni = () => {
 
 	return (
 		<div className='body'>
+			<div className='centered-content'>
 			<h1>Alumni</h1>
+			<h3>Pine Island Camp campers and counselors are part of a large network of alumni that spans far and wide, young and old.</h3>
+			</div>
 
 			<div className="gif" style={{ backgroundImage: `url(${dories})` }} ></div>
 
 			<div className='centered-content'>
 				<h3>Stay Connected</h3>
-				<p>Pine Island Camp campers and counselors are part of a large network of alumni that spans far and wide, young and old. Here we hope to provide avenues for alumni to engage with one another and to help ensure that future generations will share the same opportunities that Pine Islanders have enjoyed in the past. Please peruse the different ways you can be involved. We hope you find these tools useful.
+				<p>Here we hope to provide avenues for alumni to engage with one another and to help ensure that future generations will share the same opportunities that Pine Islanders have enjoyed in the past. 
 				</p>
 				<p>If you have moved recently, use this link to <a href="https://pineisland.campintouch.com/ui/forms/application/alumni/App"> update your contact information</a> 
 				</p>
