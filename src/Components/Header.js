@@ -23,10 +23,7 @@ const Header = () => {
 
   return (
     <div 
-      className="nav" 
-      style={{backgroundColor: pos === "top" ? "rgba(11,11,67, 0.5)" : "rgba(11,11,67, 0.5)", 
-              // boxShadow: pos === "top" ? "none": "0px 0px 20px rgba(0, 0, 0, .6)",
-              position: "fixed"  }}>
+      className="nav" >
 
       <Link to="/" className='logo-link-tag'>
         <img src={pathname === '/' && pos === 'top' ? logo : logo} 
@@ -46,9 +43,9 @@ const Header = () => {
           TRIPS
         </Link>
 
-        <Link to="/families" className="link">
+        {/*<Link to="/families" className="link">
           FAMILIES
-        </Link>
+        </Link>*/}
 
         <Link to="/staff" className="link">
           STAFF

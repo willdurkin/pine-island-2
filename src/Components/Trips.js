@@ -3,6 +3,7 @@ import canoe from '../img/activities/canoe-trip3.jpeg';
 import hike6 from '../img/trips/hike3.jpeg';
 import hike8 from '../img/trips/hike8.jpeg';
 import hike1 from '../img/trips/katahdin.jpeg';
+import hike9 from '../img/trips/hike9.jpeg';
 
 
 import canoe1 from '../img/trips/canoe-trip.jpeg';
@@ -49,7 +50,7 @@ const Trips = () => {
 					<p><strong>Mt. Washington:</strong> three-day hike up Mt. Washington for beginning hikers.
 					</p>
 				</div>
-				<img src={hike6} />
+				<img src={hike9} />
 			</div>
 
 			<div className='activity-wrapper'>

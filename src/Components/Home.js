@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch, Link } from "react-router-dom";
-
 import banner from "../img/pic6.jpeg";
 import pic4 from "../img/pic4.jpeg";
 import pic5 from "../img/pic5.png";
-import picGif from "../img/pic.gif";
+import picGif from "../img/pic-gif-new.gif";
 import pic1904 from '../img/pic-1904.jpeg';
 import kitahdin from '../img/kitahdin.jpeg';
 import hike4 from '../img/trips/hike4.jpeg';
 import hike6 from '../img/trips/hike6.jpeg';
 import campfire from '../img/campfire.jpeg';
+import campfire1 from '../img/campfire1.jpeg';
 import expedition from '../img/expedition2.jpeg';
 import awards from '../img/activities/awards.jpeg';
 
@@ -45,7 +45,7 @@ const Home = () => {
     
 
     return (
-      <div>
+      <div >
         <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} className='widget-title' />
         <div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} className='widget-text' />
         <a target="#" href={post.link} className='widget-link'><button style={{width: '190px'}}>Read More</button></a>
@@ -92,8 +92,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='slide '>
-        <h2 style={{marginLeft: '30px'}} >The Latest News & Events</h2>
+      <div className='slide column'>
+        <h2 >The Latest News & Events</h2>
         <div className='homepage-widget'>
           {widget}
           </div>
@@ -135,7 +135,7 @@ const Home = () => {
       </div>
 
       <div className="slide">
-        <img src={campfire} />
+        <img src={campfire1} style={{height: '340px'}} />
 
         <div className="copy">
           <h2>Nightly Campfire and Saturday Night Show</h2>
@@ -150,9 +150,9 @@ const Home = () => {
         <Link to='#'><button style={{width: '190px'}}>VIEW TRIPS</button></Link>
       </div>
 
-      <div className="slide">
+      {/*<div className="slide">
         <div className="copy">
-          <h2>Stories</h2>
+          <h2>Trips Across the Maine Wilderness</h2>
           
           <p>Each summer, Pine Island sends out dozens of hiking, canoeing, 
           kayaking, and rowing trips across Maine
@@ -162,9 +162,9 @@ const Home = () => {
         </div>
 
         <img src={hike6} />
-      </div>
+      </div>*/}
 
-      <div className="slide">
+      {/*<div className="slide">
         <img src={awards} />
         <div className="copy">
           <h2>Parent Reviews</h2>
@@ -175,12 +175,12 @@ const Home = () => {
 
           <Link to='#'><button style={{width: '190px'}}>LEARN ABOUT OUR TRIPS</button></Link>
         </div>
-      </div>
+      </div>*/}
 
-      <div className="gif" style={{ backgroundImage: `url(${expedition})` }} >
+      {/*<div className="gif" style={{ backgroundImage: `url(${expedition})` }} >
         <h2>Leadership Development - Expedition Camp</h2>
         <Link to='#'><button style={{width: '190px'}}>EXPEDITION CAMP</button></Link>
-      </div>
+      </div>*/}
 
 
     </div>

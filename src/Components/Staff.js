@@ -38,7 +38,7 @@ const Staff = () => {
 
 			<div className='centered-content'>
 
-				<h1>Leadership</h1>
+				<h1>Camp Leadership</h1>
 				<h3>Director</h3>
 				<p>Sumner Ford | <i>sford@pineisland.org</i></p>
 				<img src={sumner} />
