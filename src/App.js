@@ -1,9 +1,11 @@
 import "./styles.css";
 import React, { useState, useEffect } from "react";
+
 import Header from "./Components/Header";
 import MobileHeader from "./Components/MobileHeader";
 import Main from "./Components/Main";
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
 
 
 export default function App() {
@@ -17,9 +19,11 @@ export default function App() {
       window.addEventListener("resize", handleResizeWindow);
   },[windowWidth])
 
+
   return (
     <div className="App">
-      { window.innerWidth > 1115 ? ( <Header /> ) : ( <MobileHeader /> ) }
+      <ScrollToTop />
+      { windowWidth > 1115 ? ( <Header /> ) : ( <MobileHeader /> ) }
       <Main />
       <Footer />
     </div>

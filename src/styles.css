@@ -6,11 +6,7 @@
   top: -8px;
   left: -8px;
   background-color: #FAFFA; 
-  width: 100vw;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
+  overflow: hidden; 
   }
 
 
@@ -62,7 +58,7 @@ p {
   top: 0;
   left: 0;
   background-color: rgba(11,11,67, 0.75);
-  position: absolute;
+  position: fixed;
 }
 
 .hamburger-react {
@@ -810,7 +806,7 @@ button:hover {
   and (max-width: 500px) {
 
     .main {
-      height: 40vh;
+      height: 50vh;
       background-position: -170px 0;
     }
 
