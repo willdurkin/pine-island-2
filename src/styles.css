@@ -62,7 +62,7 @@ p {
   top: 0;
   left: 0;
   background-color: rgba(11,11,67, 0.75);
-  position: fixed;
+  position: absolute;
 }
 
 .hamburger-react {
@@ -270,6 +270,7 @@ p {
   background-size: cover;
   display: block;
   /*margin-top: -120px;*/
+  background-repeat: no-repeat;
 }
 
 .banner {
@@ -693,8 +694,8 @@ button:hover {
   and (max-width: 875px) {
 
     .main {
-      height: 50vh;
-      background-position: -200px 0;
+      height: 60vh;
+      background-position: 0px 0;
     }
 
     .title {
@@ -741,7 +742,7 @@ button:hover {
 
     .gif h2 {
       font-size: 26px;
-      padding-top: 130px;
+      padding-top: 70px;
     }
 
     .footer {
@@ -799,4 +800,34 @@ button:hover {
       width: 100%;
       height: auto;
     }
+
+    .gif .img-header {
+      padding-top: 70px ;
+    }
 }
+
+@media only screen 
+  and (max-width: 500px) {
+
+    .main {
+      height: 40vh;
+      background-position: -170px 0;
+    }
+
+    .title {
+      top: 250px;
+      left: 30px;
+      font-size: 40px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      top: 290px;
+      left: 30px;
+    }
+
+    .gif .img-header {
+      padding-top: 70px ;
+    }
+
+  }

@@ -13,7 +13,10 @@ const MobileHeader = () => {
 		<div>
 			<div className='nav'>
 				<Link to="/" >
-					<img src={logo} className='logo' />
+					<img src={logo} 
+						className='logo' 
+						onClick={()=>{setOpen(false)}}
+						/>
 				</Link>
 				<Hamburger 
 					className='hamburger' 

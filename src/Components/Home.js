@@ -115,8 +115,8 @@ const Home = () => {
 
 
       <div className="gif" style={{ backgroundImage: `url(${banner})` }} >
-        <h2>A magical island in the middle of a pristine, quiet lake in Maine</h2>
-        <Link to='#'><button>CAMP LIFE</button></Link>
+        <h2 classname='img-header'>A magical island in the middle of a pristine, quiet lake in Maine</h2>
+        <Link to='/camp-life'><button>CAMP LIFE</button></Link>
       </div>
 
       <div className="slide">
@@ -147,7 +147,7 @@ const Home = () => {
 
       <div className="gif" style={{ backgroundImage: `url(${kitahdin})` }} >
         <h2>Incredible adventures across the Maine wilderness</h2>
-        <Link to='#'><button style={{width: '190px'}}>VIEW TRIPS</button></Link>
+        <Link to='/trips'><button style={{width: '190px'}}>VIEW TRIPS</button></Link>
       </div>
 
       {/*<div className="slide">
