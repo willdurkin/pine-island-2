@@ -323,9 +323,10 @@ p {
 
 .slide img {
   width: 43%;
-  height: auto;
+  height: fit-content;
   border-radius: 4px;
   margin: 20px;
+  align-items: center;
 }
 
 .slide button {
@@ -710,10 +711,12 @@ button:hover {
 
     .slide {
       padding-top: 20px;
+      flex-direction: column;
     }
 
     .slide .copy {
-      width: 100%;
+      width: 90%;
+      align-items: center;
     }
 
     .slide img {
