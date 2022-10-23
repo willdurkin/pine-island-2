@@ -7,6 +7,7 @@
   left: -8px;
   background-color: #FAFFA; 
   overflow: hidden; 
+  width: 100vw;
   }
 
 
@@ -372,7 +373,7 @@ button:hover {
   width: 100vw;
   height: 700px;
   margin: 40px 0 40px 0;
-
+  background-repeat: no-repeat;
 }
 
 .gif h2 {
@@ -585,8 +586,8 @@ button:hover {
   color: white;
   background-color: #0b0b43;
   height: 310px;
-  position: absolute;
-  /*padding-top: 100px;*/
+  padding-top: 20px;
+  position: relative;
 }
 
 .footer p:first-child {

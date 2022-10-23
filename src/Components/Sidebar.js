@@ -18,6 +18,10 @@ const Sidebar = (props) => {
 		    CAMP LIFE
 		  </Link>
 
+		  <Link to="/families" className="link" onClick={()=>{props.setOpen(false)}}>
+		    FAMILIES
+		  </Link>
+
 		  <Link to="/activities" className="link" onClick={()=>{props.setOpen(false)}} >
 		    ACTIVITIES
 		  </Link>
@@ -25,10 +29,6 @@ const Sidebar = (props) => {
 		  <Link to="/trips" className="link" onClick={()=>{props.setOpen(false)}}>
 		    TRIPS
 		  </Link>
-
-		  {/*<Link to="/families" className="link" onClick={()=>{props.setOpen(false)}}>
-		    FAMILIES
-		  </Link>*/}
 
 		  <Link to="/staff" className="link" onClick={()=>{props.setOpen(false)}}>
 		    STAFF

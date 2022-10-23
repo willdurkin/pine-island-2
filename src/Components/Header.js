@@ -35,6 +35,10 @@ const Header = () => {
           CAMP LIFE
         </Link>
 
+        <Link to="/families" className="link">
+          FAMILY FAQs
+        </Link>
+
         <Link to="/activities" className="link">
           ACTIVITIES
         </Link>
@@ -43,9 +47,6 @@ const Header = () => {
           TRIPS
         </Link>
 
-        {/*<Link to="/families" className="link">
-          FAMILIES
-        </Link>*/}
 
         <Link to="/staff" className="link">
           STAFF

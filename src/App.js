@@ -22,7 +22,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <ScrollToTop />
       { windowWidth > 1115 ? ( <Header /> ) : ( <MobileHeader /> ) }
       <Main />
       <Footer />

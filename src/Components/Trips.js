@@ -15,6 +15,8 @@ import canoe5 from '../img/trips/canoe-trip5.jpeg';
 import whitehead from '../img/trips/whitehead.jpeg';
 import fishing from '../img/trips/fishing-trip.jpeg';
 
+import woodsman from '../img/trips/woodsman.jpeg';
+
 
 const Trips = () => {
 
@@ -23,10 +25,11 @@ const Trips = () => {
 			<h1 style={{ align: "center" }}>Take the Trip of a Lifetime</h1>
 			<div className="centered-content">
 		        <h3>
-		          Spending time on the trail and water teaches our boys self-reliance and community cooperation. Trips are chosen with guidance from the staff to ensure a good match between ability level and challenge. </h3>
+		          Spending time on the trail and water teaches our boys self-reliance and community cooperation. Trips are chosen with guidance from the staff to ensure a good match between ability level and challenge. 
+		         </h3>
 			</div>
 
-			<div className="gif" style={{ backgroundImage: `url(${hike6})` }} ></div>
+			<div className="about-photo" style={{ backgroundImage: `url(${hike6})` }} ></div>
 
 			<div className='activity-list slide'>
 		        <h1>Hiking Trips</h1>
@@ -205,16 +208,16 @@ const Trips = () => {
 				</p>
 			</div>
 
-			<div className="gif" style={{ backgroundImage: `url(${canoe1})` }} ></div>
+	{/*		<div className="gif" style={{ backgroundImage: `url(${woodsman})` }} ></div>
 
 			<div className='centered-content'>
 				<h1>Appalachian Trail Work Trip</h1>
 				<p>
 				Pine Island Camp has been a volunteer maintainer on the Appalachian Trail since the 1950s. Boys sign up for our annual ATC trip early in the summer and spend three days based at Pierce Pond. They clear the five-mile section of trail from Pierce Pond to the Kennebec River.
 				</p>
-			</div>
+			</div>*/}
 
-			<div className="gif" style={{ backgroundImage: `url(${canoe1})` }} ></div>
+			<div className="gif" style={{ backgroundImage: `url(${woodsman})` }} ></div>
 
 			<div className='centered-content'>
 				<h1>Maine Woodsman</h1>
@@ -223,7 +226,7 @@ const Trips = () => {
 				</p>
 			</div>
 
-				<div className="gif" style={{ backgroundImage: `url(${canoe1})` }} ></div>
+				<div className="gif" style={{ backgroundImage: `url(${canoe3})` }} ></div>
 
 				<div className='centered-content'>
 					<h1>Expedition Camp</h1>

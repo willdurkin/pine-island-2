@@ -32,18 +32,19 @@ const CampLife = () => {
 
 			
 			<div className='centered-content'>
-				<h2>Our Values</h2> 
-			
-				<p>
-				Today, with hundreds of summer programs available, a summer at Pine Island remains very much as it was a century ago and intentionally different from most camp experiences. A season at Pine Island is designed to help boys ages nine to fifteen develop self-confidence: campers have the independence to make substantial choices, the support of a community built on shared values, and enough time away to feel both truly on their own and an integral part of the community they've helped create. 
-				</p>
-				<p>
-				We rely on each other for everything, from instruction to entertainment.
-				</p>
+
+			<h3>
+			Today, with hundreds of summer programs available, a summer at Pine Island remains very much as it was a century ago and intentionally different from most camp experiences.
+			</h3>
+				
+
 				<p>
 				Whether your son is shy or gregarious, big or small, this camp will challenge him to be at his best in the varied circumstances of simple outdoor living, albeit under the close supervision of our caring staff. Generations of Pine Islanders have found their summers at camp to be among the most meaningful of their lives.
 				</p>
-				<h3>Welcome to Pine Island</h3>
+				<p>
+				 A season at Pine Island is designed to help boys ages nine to fifteen develop self-confidence: campers have the independence to make substantial choices, the support of a community built on shared values, and enough time away to feel both truly on their own and an integral part of the community they've helped create. 
+				</p>
+
 			</div>
 			<div className="about-photo" style={{ backgroundImage: `url(${boatPhoto})` }} />
 
