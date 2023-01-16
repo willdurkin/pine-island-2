@@ -45,7 +45,7 @@ const Families = () => {
 					</button>
 				</div>
 
-				<{content} />
+				{/*<{content} />*/}
 				
 			</div>
 		</div>

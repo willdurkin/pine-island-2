@@ -19,6 +19,7 @@ import Staff from './Staff';
 import Alumni from './Alumni';
 import Contact from './Contact';
 import Donate from './Donate';
+import Post from './Post';
 
 
 const Main = () => {
@@ -44,6 +45,7 @@ const Main = () => {
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/post" element={<Staff />} />
       </Routes>
     </main>
   );

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Switch, Link, Redirect} from 'react-router-dom';
+
 
 const Blog = () => {
 
@@ -29,12 +31,13 @@ const Blog = () => {
 	  const handleNextPage = () => setPage(page < pageNumber ? page + 1 : pageNumber);
 
 	  let postList = posts.map((post, i) => {
-	  	console.log(posts);
+	  	console.log(post);
 	  	
 	    return (
 	      <div>
 	        <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
 	        <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+	        <Link to="/post" >Read More</Link>
 	      </div>
 	    );
 	  });
